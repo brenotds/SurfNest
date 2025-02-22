@@ -1,0 +1,47 @@
+.opn-close-bg {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+}
+.opn-close-time {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.header {
+  background-color: var(--secondary-color);
+}
+.menu-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.4rem;
+  padding: 1.6rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  bottom: 1rem;
+  left: 0;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}

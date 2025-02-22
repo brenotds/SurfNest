@@ -1,0 +1,70 @@
+.bg {
+  background: url("../img/bg.png") no-repeat center/cover;
+  width: 100%;
+  height: 40rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 3.2rem;
+  align-items: flex-end;
+  height: 40rem;
+  padding-bottom: 6.4rem;
+}
+
+.cta-enroll {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.2rem;
+}
+
+.input {
+  width: 50%;
+  height: 4.7rem;
+  outline: none;
+  padding: 1rem;
+  font: inherit;
+  font-size: 1.4rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.8rem 0 0 0.8rem;
+  transition: all 0.3s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.input,
+.cta-btn {
+  box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+}
+
+.cta-btn {
+  all: unset;
+  cursor: pointer;
+  font: inherit;
+  background: linear-gradient(315deg, rgba(17, 136, 238, 1) 0%, rgba(13, 104, 182, 1) 100%);
+  color: #fff;
+  padding: 1rem 5rem 1rem 2rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  background: #269bff;
+  background: linear-gradient(315deg, rgb(87, 173, 249) 0%, rgb(18, 74, 130) 100%);
+}
+
+.cta-btn::after {
+  content: url("../img/arrow.svg");
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}

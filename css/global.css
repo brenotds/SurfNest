@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", serif;
+  font-size: var(--font-size);
+  color: var(--text-color);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.btn {
+  background: linear-gradient(315deg, rgba(17, 136, 238, 1) 0%, rgba(13, 104, 182, 1) 100%);
+  box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #269bff;
+  background: linear-gradient(315deg, rgb(87, 173, 249) 0%, rgb(18, 74, 130) 100%);
+}
+
+.pdn {
+  padding: 0 1.6rem;
+}
+
+.xl {
+  font-size: var(--h1);
+  font-family: "Alice", serif;
+  color: #fff;
+}
