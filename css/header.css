@@ -45,3 +45,62 @@
 .nav-link:hover::before {
   width: 100%;
 }
+
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  [data-menu="button"] {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(315deg, rgba(17, 136, 238, 1) 0%, rgba(13, 104, 182, 1) 100%);
+    box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 1rem;
+    position: relative;
+    z-index: 11;
+  }
+
+  [data-menu="button"]::before {
+    content: "";
+    height: 0.2rem;
+    width: 1.6rem;
+    background: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.4rem #fff, 0 -0.4rem #fff;
+    transition: trasform 0.3s;
+  }
+
+  [data-menu="button"].active::before {
+    transform: rotate(90deg);
+  }
+
+  [data-menu="list"] {
+    display: none;
+    position: absolute;
+    background: var(--secondary-color);
+    width: 100%;
+    height: 42rem;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    right: 0;
+    padding: 8rem 0;
+  }
+  [data-menu="list"].active {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  .opn-close-bg {
+    text-align: center;
+  }
+}

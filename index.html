@@ -21,7 +21,8 @@
             <div class="container menu-flex">
                 <a href=""><img src="./img/logo.svg" alt="Logo"></a>
                 <nav class="nav">
-                    <ul class="nav-list">
+                    <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+                    <ul data-menu="list" id="menu" class="nav-list">
                         <li><a class="nav-link" href="">Beach</a></li>
                         <li><a class="nav-link" href="">Lessons</a></li>
                         <li><a class="nav-link" href="">Contact</a></li>
@@ -35,7 +36,7 @@
         <section class="bg">
             <div class="container cta pdn">
                 <div>
-                    <h1 class="xl">Surf School</h1>
+                    <h1 class="xl-cta">Surf School</h1>
                 </div>
                 <div class="cta-enroll">
                     <input class="input" type="text" placeholder="Email">
@@ -45,7 +46,7 @@
         </section>
     </main>
 
-    <script type="module" src="./javaScript/script.js"></script>
+    <script src="./javaScript/script.js"></script>
 </body>
 
 </html>

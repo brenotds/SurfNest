@@ -6,7 +6,7 @@
 
 .cta {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   align-items: flex-end;
   height: 40rem;
@@ -17,6 +17,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 2.2rem;
+  justify-content: end;
+}
+.xl-cta {
+  font-size: 9.2rem;
+  color: #fff;
+  font-family: "alice", sans-serif;
+  letter-spacing: -1%;
+  line-height: 120%;
 }
 
 .input {
@@ -53,6 +61,7 @@
   border-radius: 0 0.8rem 0.8rem 0;
   position: relative;
   transition: all 0.3s;
+  font-weight: bold;
 }
 
 .cta-btn:hover {
@@ -67,4 +76,47 @@
   top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.2rem;
+    gap: 3.2rem;
+  }
+
+  .cta-enroll {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .input,
+  .cta-btn {
+    width: 50%;
+    border-radius: 0.8rem;
+  }
+
+  .cta-btn {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .cta-btn::after {
+    display: none;
+  }
+
+  .xl-cta {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .input,
+  .cta-btn {
+    width: 100%;
+  }
 }
