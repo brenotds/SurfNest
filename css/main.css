@@ -1,0 +1,135 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 6.4rem;
+  gap: 6.4rem;
+}
+.location {
+  margin-top: 8.4rem;
+}
+.direction {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3%;
+  font-weight: 600;
+}
+
+.way-to-go {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.bold::before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 0.4rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(315deg, rgba(17, 136, 238, 1) 0%, rgba(13, 104, 182, 1) 100%);
+  margin: 0 0.8rem 0.5rem 0;
+}
+
+.xl-content {
+  font-size: var(--h1);
+  font-weight: 500;
+  font-family: "alice", sans-serif;
+  line-height: 1.2;
+  max-width: 60rem;
+  letter-spacing: -1%;
+  margin-bottom: 6.4rem;
+}
+
+.xl-dec {
+  color: var(--primary-color);
+}
+
+.list-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 2.4rem;
+}
+
+.gap {
+  gap: 7.2rem;
+  margin-bottom: 9.4rem;
+}
+
+.list-icon:nth-child(1)::before {
+  content: url("../img/sandalhas.svg");
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+.list-icon:nth-child(2)::before {
+  content: url("../img/coco.svg");
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+.list-icon:nth-child(3)::before {
+  content: url("../img/boia.svg");
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+.list-icon::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.2rem;
+  background: var(--bg-color);
+  border-radius: 0.4rem;
+  bottom: -50%;
+}
+
+.content-p {
+  margin: 3.2rem 0 1.6rem 0;
+  max-width: 47rem;
+}
+
+@media (max-width: 950px) {
+  .xl-content {
+    font-size: 6.4rem;
+    line-height: 1;
+  }
+  .list-icon::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 3.2rem;
+  }
+  .content {
+    order: -1;
+  }
+  .xl-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .xl-content {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .xl-content {
+    font-size: 3.8rem;
+  }
+  .list-icon {
+    font-size: 2.2rem;
+  }
+}

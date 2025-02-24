@@ -13,6 +13,8 @@ body {
   font-family: "Nunito", serif;
   font-size: var(--font-size);
   color: var(--text-color);
+  height: 1000rem;
+  overflow-x: hidden;
 }
 
 ol,
