@@ -11,7 +11,7 @@
 
 .header {
   background-color: var(--secondary-color);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .menu-flex {
   display: flex;
