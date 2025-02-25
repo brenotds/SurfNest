@@ -10,7 +10,6 @@
 
 .header {
   background-color: var(--secondary-color);
-      overflow-x: hidden;
 }
 .menu-flex {
   display: flex;
@@ -18,13 +17,11 @@
   justify-content: space-between;
   height: 7.4rem;
   padding: 1.6rem;
-      overflow-x: hidden;
 }
 
 .nav-list {
   display: flex;
   gap: 3.2rem;
-      overflow-x: hidden;
 }
 
 .nav-link {
