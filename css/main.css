@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 6.4rem;
+  margin-bottom: 8.4rem;
   gap: 6.4rem;
 }
 .location {
@@ -116,6 +117,9 @@
   }
   .xl-content {
     text-align: center;
+  }
+  .location {
+    margin-top: 3.6rem;
   }
 }
 

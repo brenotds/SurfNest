@@ -1,0 +1,126 @@
+.sub-bg {
+  background: var(--bg-color);
+  padding: 6.4rem 0;
+  position: relative;
+}
+
+.sub-bg::before {
+  content: url("../img/ondas.svg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  margin-top: 6.4rem;
+  justify-items: center;
+  overflow-x: auto;
+}
+
+.sub::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+.sub::-webkit-scrollbar-thumb {
+  background: linear-gradient(315deg, rgba(17, 136, 238, 1) 0%, rgba(13, 104, 182, 1) 100%);
+  border-top: 10px solid #eff4f9;
+}
+
+.sub::-webkit-scrollbar-track {
+  background: #eff4f9;
+}
+
+.m-sub {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.xl-sub {
+  font-size: var(--h1);
+  font-family: "Alice", serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.enroll-sub {
+  background-color: #fff;
+  padding: 4.4rem 1rem;
+  border-radius: 0.8rem;
+  width: 36rem;
+  height: 45rem;
+  box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+}
+
+.list-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.price-sub {
+  display: block;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 3.2rem 0 3.2rem 3.2rem;
+}
+
+.btn-sub {
+  background: linear-gradient(315deg, rgba(23, 34, 45, 1) 0%, rgb(51, 85, 118) 100%);
+  box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+  font-weight: bold;
+  margin-left: 3.2rem;
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+
+.btn-sub:hover {
+  background: #269bff;
+  background: linear-gradient(315deg, rgb(87, 173, 249) 0%, rgb(18, 74, 130) 100%);
+}
+
+.btn-sub::after {
+  content: url("../img/seta.svg");
+  position: absolute;
+  right: 3.2rem;
+}
+
+.list-sub li {
+  display: flex;
+  align-items: center;
+}
+
+.list-sub li::before {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 1rem;
+  border: 0.2rem solid var(--dec-color);
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .sub {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .enroll-sub {
+    width: 100%;
+  }
+}
