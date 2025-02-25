@@ -1,3 +1,8 @@
+header {
+  overflow-x: hidden;
+  }
+
+
 .opn-close-bg {
   background-color: var(--primary-color);
   padding: 0.5rem;
