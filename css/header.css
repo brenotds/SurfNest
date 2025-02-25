@@ -84,7 +84,6 @@
 
   [data-menu="list"] {
     position: absolute;
-    display: none;
     background: var(--secondary-color);
     width: 100%;
     height: 42rem;
@@ -96,7 +95,7 @@
     transition: 0.75s ease-in-out;
   }
   [data-menu="list"].active {
-    display: block;
+    right: 100%;
   }
 }
 
