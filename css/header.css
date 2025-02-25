@@ -1,7 +1,3 @@
-header {
-  overflow-x: hidden;
-  }
-
 
 .opn-close-bg {
   background-color: var(--primary-color);
@@ -15,6 +11,7 @@ header {
 
 .header {
   background-color: var(--secondary-color);
+  overflow-x: hidden;
 }
 .menu-flex {
   display: flex;
