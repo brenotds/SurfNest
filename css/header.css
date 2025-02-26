@@ -57,7 +57,7 @@
 @media (max-width: 800px) {
 
     body, html{
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
   }
   
