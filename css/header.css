@@ -55,8 +55,9 @@
 }
 
 @media (max-width: 800px) {
-  body, html {
+  body{
     overflow-x: hidden;
+    position: relative
   }
 
   .btn-hamb {
@@ -91,9 +92,8 @@
   }
 
   .nav-list {
-    display: none;
     position: absolute;
-    right: 0;
+    right: -100%;
     width: 100vw;
     height: 42rem;
     background: var(--secondary-color);
@@ -102,11 +102,10 @@
     gap: 6.4rem;
     justify-content: center;
     z-index: 10;
-    transform: translateX(100%);
     transition: transform 0.75s ease-in;
   }
   .nav-list.active {
-    transform: translateX(0%);
+     right: 0;
   }
 }
 
