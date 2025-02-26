@@ -1,0 +1,156 @@
+.contact {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 3.2rem;
+  margin: 6.4rem 0;
+}
+
+.form {
+  width: 80%;
+  position: relative;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 100%;
+  background: var(--bg-color);
+  top: 0;
+  right: -15%;
+  border-radius: 0.8rem;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+}
+
+.form input,
+textarea {
+  display: block;
+  width: 80%;
+  border: none;
+  background-color: var(--bg-color);
+  height: 4rem;
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 1rem;
+  box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 0.2rem solid var(--primary-color);
+}
+
+.form textarea {
+  resize: none;
+  height: 18rem;
+}
+
+.btn-form {
+  padding: 1.6rem 3.2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(315deg, rgba(23, 34, 45, 1) 0%, rgb(51, 85, 118) 100%);
+  box-shadow: rgba(191, 212, 237, 0.189) 0px 2px 8px;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn-form:hover {
+  background: #269bff;
+  background: linear-gradient(315deg, rgb(87, 173, 249) 0%, rgb(18, 74, 130) 100%);
+}
+
+.margin-b {
+  margin-bottom: 1.6rem;
+}
+
+.info {
+  display: grid;
+}
+
+.contact-p {
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.coct-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.a-dec::before {
+  content: url("../img/address.svg");
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.e-dec::before {
+  content: url("../img/contact.svg");
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.t-dec::before {
+  content: url("../img/time.svg");
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.info {
+  position: relative;
+}
+
+.info::after {
+  content: url("../img/bg-icones.svg");
+  position: absolute;
+  right: -100%;
+}
+
+@media (max-width: 800px) {
+  .form::before {
+    display: none;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .form input,
+  textarea {
+    width: 100%;
+  }
+  .info {
+    order: -1;
+    width: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    gap: 3.6rem;
+  }
+  .info::after {
+    display: none;
+  }
+  .contact-info {
+    width: 100%;
+  }
+}

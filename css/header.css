@@ -55,12 +55,16 @@
 }
 
 @media (max-width: 800px) {
-
-    body, html{
+  body,
+  html {
     overflow-x: hidden;
     position: relative;
   }
-  
+
+  body {
+    overflow-y: hidden;
+  }
+
   .btn-hamb {
     display: flex;
     align-items: center;
@@ -106,7 +110,7 @@
     transition: 0.75s ease-in;
   }
   .nav-list.active {
-     right: 0;
+    right: 0;
   }
 }
 
