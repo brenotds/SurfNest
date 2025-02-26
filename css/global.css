@@ -9,6 +9,11 @@ html {
   font-size: 62.5%;
 }
 
+  body, html{
+    overflow-x: hidden;
+    position: relative
+  }
+
 body {
   font-family: "Nunito", serif;
   font-size: var(--font-size);
