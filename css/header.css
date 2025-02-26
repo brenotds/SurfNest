@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 800px) {
-  body {
+  body, html {
     overflow-x: hidden;
   }
 
@@ -91,6 +91,7 @@
   }
 
   .nav-list {
+    display: none;
     position: absolute;
     right: 0;
     width: 100vw;
