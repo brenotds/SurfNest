@@ -55,7 +55,8 @@
 }
 
 @media (max-width: 800px) {
-  body{
+  
+  body, html{
     overflow-x: hidden;
     position: relative
   }
@@ -102,7 +103,7 @@
     gap: 6.4rem;
     justify-content: center;
     z-index: 10;
-    transition: transform 0.75s ease-in;
+    transition: all 0.75s ease-in;
   }
   .nav-list.active {
      right: 0;
