@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfNest | Enroll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo-only.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container menu-flex">
+                <a href="/index.html"><img src="./img/logo.svg" alt="Logo"></a>
+                <nav class="nav js-menu">
+                    <button class="btn-hamb"></button>
+                    <ul id="menu" class="nav-list">
+                        <li><a class="nav-link" href="/index.html#beach">Beach</a></li>
+                        <li><a class="nav-link" href="/index.html#lessons">Lessons</a></li>
+                        <li><a class="nav-link" href="/index.html#contact">Contact</a></li>
+                        <li><a class="btn" href="">Enroll Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="xl-sub enroll-bg">Enroll Now</h1>
+            <div class="enroll-form container pdn">
+                <div class="form form-grid">
+
+                    <div>
+                        <form class="form-enroll" action="" id="form">
+
+                            <div class="margin-b">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="margin-b">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="margin-b form-numbers">
+                                <div>
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+
+                                <div>
+                                    <label for="age">Age</label>
+                                    <input type="number" id="age" name="age" min="1" max="90" required>
+                                </div>
+                            </div>
+
+                            <div class="margin-b">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" name="cardNumber" required>
+                            </div>
+                            <div class="form-numbers margin-b">
+                                <div class="margin-b">
+                                    <label for="expiryDate">Expiration Date</label>
+                                    <input type="month" id="expiryDate" name="expiryDate" required>
+                                </div>
+                                <div class="margin-b">
+                                    <label for="cvc">CVC</label>
+                                    <input type="text" id="cvc" name="cvc" required>
+                                </div>
+                            </div>
+
+                            <div class="margin-b">
+                                <label for="plan">Select Plan</label>
+                                <select id="plan" name="plan" required>
+                                    <option value="child">Child $49,00 / Lesson</option>
+                                    <option value="adult">Adult $69,00 / Lesson</option>
+                                    <option value="advanced">Advanced $99,00 / Lesson</option>
+                                </select>
+                            </div>
+
+                            <button class="btn-form btn-form-enroll" type="submit">Join Now</button>
+                            <p class="sec-p">Secure and Encrypted Information</p>
+                        </form>
+                    </div>
+
+                    <div class="form-img">
+                        <img src="./img/form-enroll.webp" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer-bg">
+        <div class="footer container pdn">
+
+            <div class="footer-desc">
+                <h5 class="desc-m">Our Surf School</h5>
+                <nav class="js-menu">
+                    <ul class="desc-flex">
+                        <li><a class="desc-link" href="#beach">About Surf Nest</a></li>
+                        <li><a class="desc-link" href="#lessons">Lessons</a></li>
+                        <li><a class="desc-link" href="#contact">Address & Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+            <div class="logos-flex">
+                <div>
+                    <p class="desc-m">Connect with us</p>
+                    <div class="logo-flex">
+                        <a href=""><img src="./img/insta.svg" alt="instagram logo"></a>
+                        <a href=""><img src="./img/meta.svg" alt="facebook logo"></a>
+                        <a href=""><img src="./img/x.svg" alt="X logo"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container dev-flex">
+            <a href=""><img src="./img/logo-footer.svg" alt=""></a>
+            <p class="dev-name">Developed by Breno Tardelli ©</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

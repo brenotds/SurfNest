@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.form::before {
+.form-dec::before {
   content: "";
   position: absolute;
   width: 0.2rem;

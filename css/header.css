@@ -12,11 +12,13 @@
   background-color: var(--secondary-color);
 }
 .menu-flex {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 7.4rem;
   padding: 1.6rem;
+  background-color: var(--secondary-color);
 }
 
 .nav-list {
