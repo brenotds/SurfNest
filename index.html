@@ -20,12 +20,12 @@
         <div class="header">
             <div class="container menu-flex">
                 <a href=""><img src="./img/logo.svg" alt="Logo"></a>
-                <nav class="nav">
+                <nav class="nav js-menu">
                     <button class="btn-hamb"></button>
                     <ul id="menu" class="nav-list">
-                        <li><a class="nav-link" href="">Beach</a></li>
-                        <li><a class="nav-link" href="">Lessons</a></li>
-                        <li><a class="nav-link" href="">Contact</a></li>
+                        <li><a class="nav-link" href="#beach">Beach</a></li>
+                        <li><a class="nav-link" href="#lessons">Lessons</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
                         <li><a class="btn" href="">Enroll Now</a></li>
                     </ul>
                 </nav>
@@ -57,7 +57,7 @@
                     </ul>
                 </div>
 
-                <div class="content">
+                <div class="content" id="beach">
                     <h2 class="xl-content"><span class="xl-dec">Lessons</span> on one of the best beaches in <span class="xl-dec">Búzios</span>.</h2>
                     <ul class="way-to-go gap">
                         <li class="list-icon">8 km of coastline</li>
@@ -74,7 +74,7 @@
             </div>
         </section>
 
-        <section class="sub-bg">
+        <section class="sub-bg" id="lessons">
             <h2 class="xl-sub pdn">Lessons</h2>
             <div class="container sub pdn">
 
@@ -83,7 +83,7 @@
                     <ul class="list-sub">
                         <li>Children aged 5 to 15</li>
                         <li>Provided equipment</li>
-                        <li>Schedules from Fri to Sat.</li>
+                        <li>Schedules from Fri to Sat</li>
                         <li>2 consecutive hours of class</li>
                     </ul>
                     <span class="price-sub">$ 49,00 / Lesson</span>
@@ -95,7 +95,7 @@
                     <ul class="list-sub">
                         <li>Adult aged 15 to 65</li>
                         <li>Provided equipment</li>
-                        <li>Schedules from Fri to Sat.</li>
+                        <li>Schedules from Fri to Sat</li>
                         <li>3 consecutive hours of class</li>
                     </ul>
                     <span class="price-sub">$ 69,00 / Lesson</span>
@@ -108,7 +108,7 @@
                     <ul class="list-sub">
                         <li>Surfing experience required</li>
                         <li>Bring your own equipment</li>
-                        <li>Schedules from Fri to Sat.</li>
+                        <li>Schedules from Fri to Sat</li>
                         <li>4 consecutive hours of class</li>
                     </ul>
                     <span class="price-sub">$ 99,00 / Lesson</span>
@@ -134,12 +134,12 @@
                 </video>
         </section>
 
-        <section class="contact container pdn">
+        <section class="contact container pdn" id="contact">
             <h2 class="xl-sub">Contact</h2>
             <div class="contact-grid">
 
                 <div class="form">
-                    <form action="">
+                    <form action="" id="form">
 
                         <div class="margin-b">
                             <label for="name">Nome</label>
@@ -198,9 +198,39 @@
             </div>
         </section>
 
-
-
     </main>
+
+    <footer class="footer-bg">
+        <div class="footer container pdn">
+
+            <div class="footer-desc">
+                <h5 class="desc-m">Our Surf School</h5>
+                <ul class="desc-flex">
+                    <li><a class="desc-link" href="#">About Surf Nest</a></li>
+                    <li><a class="desc-link" href="#">Lessons</a></li>
+                    <li><a class="desc-link" href="#">Address & Contact</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="logos-flex">
+                <div>
+                    <p class="desc-m">Connect with us</p>
+                    <div class="logo-flex">
+                        <a href=""><img src="./img/insta.svg" alt="instagram logo"></a>
+                        <a href=""><img src="./img/meta.svg" alt="facebook logo"></a>
+                        <a href=""><img src="./img/x.svg" alt="X logo"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container dev-flex">
+            <a href=""><img src="./img/logo-footer.svg" alt=""></a>
+            <p class="dev-name">Developed by Breno Tardelli ©</p>
+        </div>
+    </footer>
 
     <script src="./javaScript/script.js"></script>
 </body>

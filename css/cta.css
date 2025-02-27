@@ -112,6 +112,9 @@
   .xl-cta {
     text-align: center;
   }
+  .contact-info:nth-child(3) {
+    margin-top: -3rem;
+  }
 }
 
 @media (max-width: 550px) {
