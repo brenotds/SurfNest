@@ -57,7 +57,7 @@
   font: inherit;
   background: linear-gradient(315deg, rgba(17, 136, 238, 1) 0%, rgba(13, 104, 182, 1) 100%);
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem 1rem 1rem;
   border-radius: 0 0.8rem 0.8rem 0;
   position: relative;
   transition: all 0.3s;
@@ -67,6 +67,15 @@
 .cta-btn:hover {
   background: #269bff;
   background: linear-gradient(315deg, rgb(87, 173, 249) 0%, rgb(18, 74, 130) 100%);
+}
+
+.cta-btn::after {
+  content: url("../img/arrow.svg");
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 800px) {
