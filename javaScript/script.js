@@ -1,3 +1,5 @@
+"use strict";
+
 function menuMobile() {
   const mobileMenu = document.querySelector(".btn-hamb");
   const navList = document.querySelector(".nav-list");
@@ -28,5 +30,4 @@ function scrollSmooth() {
     link.addEventListener("click", scrollToSection);
   });
 }
-
 scrollSmooth();
