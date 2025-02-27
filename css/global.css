@@ -13,6 +13,7 @@ body {
   font-family: "Nunito", serif;
   font-size: var(--font-size);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 ol,
@@ -33,6 +34,19 @@ img {
   width: 100%;
   max-width: 144rem;
   margin: 0 auto;
+}
+
+.anima-scroll {
+  transform: translateX(-100%);
+  transition: transform 0.75s ease;
+}
+
+.anima-scroll:nth-of-type(even) {
+  transform: translateX(100%);
+}
+
+.anima-scroll.show {
+  transform: translateX(0);
 }
 
 .btn {

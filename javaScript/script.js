@@ -31,3 +31,22 @@ function scrollSmooth() {
   });
 }
 scrollSmooth();
+
+function animaScroll() {
+  const content = document.querySelectorAll(".anima-scroll");
+
+  window.addEventListener("scroll", checkContent);
+
+  function checkContent() {
+    const triggerBottom = (window.innerHeight / 5) * 4;
+
+    content.forEach((box) => {
+      const contentTop = box.getBoundingClientRect().top;
+
+      if (contentTop < triggerBottom) {
+        box.classList.add("show");
+      }
+    });
+  }
+}
+animaScroll();
